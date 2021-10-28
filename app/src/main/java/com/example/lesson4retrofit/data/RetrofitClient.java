@@ -28,6 +28,7 @@ public class RetrofitClient {
 
     }
 
+/*
 
     private final OkHttpClient okHttpClient = new OkHttpClient()
             .newBuilder()
@@ -61,5 +62,6 @@ public class RetrofitClient {
     public HerokuApi provideHeroku() {
         return gRetrofit.create(HerokuApi.class);
     }
+*/
 
 }

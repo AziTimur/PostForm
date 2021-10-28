@@ -69,7 +69,7 @@ public class FormFragment extends Fragment {
             public void clickItem(Post model) {
                 Bundle b = new Bundle();
                 b.putSerializable("ff_key",model);
-                NavController navController = Navigation.findNavController(requireActivity(),R.id.form_fab);
+                NavController navController = Navigation.findNavController(requireActivity(),R.id.nav_host_fragment);
                 navController.navigate(R.id.postFragment,b);
             }
         });
@@ -78,7 +78,8 @@ public class FormFragment extends Fragment {
 
     private void open() {
 
-        NavController navController = Navigation.findNavController(requireActivity(),R.id.form_fab);
+        NavController navController = Navigation.findNavController(requireActivity(),R.id.nav_host_fragment);
         navController.navigate(R.id.postFragment);
+
     }
 }

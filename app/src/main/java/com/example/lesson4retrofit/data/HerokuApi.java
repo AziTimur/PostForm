@@ -1,6 +1,5 @@
 package com.example.lesson4retrofit.data;
 
-import com.example.lesson4retrofit.models.Film;
 import com.example.lesson4retrofit.models.Post;
 
 import java.util.List;
